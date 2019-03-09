@@ -1,0 +1,48 @@
+
+1st course - useful tools, troubleshooting essentials, Linux & cPanel basics
+====================
+
+Useful tools
+---------------
+	live server (CSF is not installed by default nor is it bundled with cPanel)
+	SSH client (MobaXterm, Putty, Cygwin, ...)
+	online courses (Linux Academy, RHCSA, LPI, ...)
+    expendable server (local/virtual server via VirtualBox, VMware, KVM, ...) 
+		[clone a fresh server as a template first, instead of installing new ones all the time]
+
+Troubleshooting essentials
+---------------
+	ID the client (is it spam? 3rd party contact/abuse dept. from another company? Ex client? Sub/resold account? Any previous contact?)
+    establish what the problem is ("my Email won't work", "my site is down")
+    locate the account/server (Domain valid? Site exists on the server? DNS resolving properly?)
+	access the server
+        replicate the issue (CAUTION: 
+		whenever possible, make sure your actions are reversible, mv/cp instead of rm, backup everything affected, caution when renaming/reassigning domains)
+        notate/document (concise > verbose, add your own comment)
+        following up on tickets
+	search for solutions online before escalating
+
+Linux and cPanel basics + tasks to get you going
+---------------
+	install any Linux distribution from scratch (CentOS, RHEL, Ubuntu, ...)
+	log into your local server via SSH
+	print something to the command line
+	install vim
+	run vimtutor
+	create a file
+	find a file
+	install ConfigServer Security & Firewall
+	locate a file (yum whatprovides locate, updatedb)
+	create an alias (for example: tail a certain log file, clear screen + switch to home folder)
+	install full LAMP stack (Linux, Apache, MySQL, PHP)
+		install a web server (Apache, Nginx)
+			create a custom landing page (text/HTML only, /usr/share/httpd/noindex/, /var/www/html/info.php)
+		install a database server (MySQL, MariaDB)
+		install a CMS manually (WordPress, Joomla, Magento, Drupal, ...) 
+  obtain your own domain (this will allow you to learn about DNS resolution/propagation, have your own Email, FQDN, etc.)
+	create a cPanel account
+	set up custom nameservers and DNS
+	create your own web site
+	block your IP
+	unblock your IP via another IP/VPN or the VM console (Tor browser has one built in, so it's ideal)
+	(ideally: host a live website)
